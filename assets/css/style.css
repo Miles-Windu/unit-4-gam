@@ -1,5 +1,6 @@
 body {
     background-color: lightblue; 
+    background-image: url(/Users/KwameShabazz/coding_bootcamp/Homework_12.21.18/unit-4-game/assets/images/mainpage.jpeg);
     color: green ;
     font-family: fantasy; 
     font-size: 18px; 
@@ -63,16 +64,17 @@ body {
 /* Styling the buttons */
 .button { 
     float: left; 
-    height: 125px; 
-    width: 125px; 
+    height: 122px; 
+    width: 122px; 
     background-color: white;
-    border: black 1px dashed;
+    /* border: black 1px dashed; */
     margin: 5px;  
 }
 
 /* Pseudo coding the button click and hover */
 button:hover {
     cursor: pointer;
+    opacity: 0.5;   
 }
 
 /* styling each button icon */
