@@ -1,0 +1,101 @@
+body {
+    background-color: lightblue; 
+    color: green ;
+    font-family: fantasy; 
+    font-size: 18px; 
+}
+
+.heading {
+    /* border:  */
+    width: 350px; 
+    height: 100px; 
+    font-size: 40px; 
+    text-align: center; 
+    color: white; 
+    box-sizing: border-box;
+    padding-top: 30px; 
+    background-color: orange; 
+    margin: 10px 
+}
+
+.instructions {
+    box-sizing: border-box;
+    font-size: 20px; 
+    width:500px; 
+    height: 400px; 
+    padding: 15px; 
+    margin: 10px; 
+    background-color: beige; 
+    line-height: 23px;
+}
+
+/* the box where the computer will display the number to try to reach */
+.random-number {
+    float: left;
+    color: black; 
+    box-sizing: border-box;
+    font-size: 40px;
+    /* border: dotted 2px black;  */
+    width: 250px; 
+    height: 150px; 
+    margin: 10px; 
+    padding: 15px; 
+    background-color: green;
+}
+
+/* this box will display the wins and losses */
+.wins-losses {
+    float: left; 
+    box-sizing: border-box; 
+    background-color: rgb(20, 178, 213);
+    height: 150px; 
+    width: 100px; 
+    color: black; 
+    padding: 10px; 
+    margin: 10px; 
+}
+
+/* clearing the previous float with a button section */
+.buttons {
+    clear: both;
+}
+
+/* Styling the buttons */
+.button { 
+    float: left; 
+    height: 100px; 
+    width: 120px; 
+    background-color: white;
+    border: black 1px dashed;
+    margin: 5px;  
+}
+
+/* Pseudo coding the button click and hover */
+button:hover {
+    cursor: pointer;
+}
+
+
+.user-score {
+    clear: both; 
+    box-sizing: border-box;
+    width: 250px; 
+    height: 30px; 
+    padding: 8px; 
+    color: white; 
+    font-size: 20px; 
+    background-color: rgb(23, 111, 244);
+    margin: 10px; 
+}
+
+/* this box will display the amount that the user has clicked so far */
+.points-so-far { 
+    box-sizing: border-box; 
+    background-color: rgb(23, 111, 244); 
+    color: white; 
+    height: 150px; 
+    width: 250px; 
+    margin: 10px; 
+    padding: 15px; 
+    font-size: 40px; 
+}
