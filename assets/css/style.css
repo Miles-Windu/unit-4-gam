@@ -63,8 +63,8 @@ body {
 /* Styling the buttons */
 .button { 
     float: left; 
-    height: 100px; 
-    width: 120px; 
+    height: 125px; 
+    width: 125px; 
     background-color: white;
     border: black 1px dashed;
     margin: 5px;  
@@ -74,6 +74,28 @@ body {
 button:hover {
     cursor: pointer;
 }
+
+/* styling each button icon */
+#ruby {
+    background-image: url(/Users/KwameShabazz/coding_bootcamp/Homework_12.21.18/unit-4-game/assets/images/ruby.jpeg);
+    background-repeat: none;  
+}
+
+#sapphire {
+    background-image: url(/Users/KwameShabazz/coding_bootcamp/Homework_12.21.18/unit-4-game/assets/images/sapphire.jpeg);
+    background-repeat: none; 
+}
+
+#gold {
+    background-image: url(/Users/KwameShabazz/coding_bootcamp/Homework_12.21.18/unit-4-game/assets/images/crystal.jpeg);
+    background-repeat: none; 
+}
+
+#emerald {
+    background-image: url(/Users/KwameShabazz/coding_bootcamp/Homework_12.21.18/unit-4-game/assets/images/emerald.jpeg); 
+    background-repeat: none; 
+}
+
 
 
 .user-score {
