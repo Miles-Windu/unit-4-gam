@@ -1,6 +1,14 @@
-// Have the computer generate a random number between 19 and 120. 
+// Create Variables for each random event on the page. 
+var computerGuess = Math.floor(Math.random() * 120) +19;
+var rubyGuess = Math.floor(Math.random() * 12) +1;
+var sapphireGuess = Math.floor(Math.random() * 12) +1;
+var crystalGuess = Math.floor(Math.random() * 12) +1; 
+var emeraldGuess = Math.floor(Math.random() * 12) +1; 
+var userTotal = 0; 
 
-// Display that number in the provided box. 
+
+// Display that number in their provided box. 
+
 
 // Have the wins and losses display in the box. 
 
