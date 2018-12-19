@@ -46,51 +46,213 @@ console.log(computerGuess);
 $("#wins").html("Wins: " + wins);
 $("#losses").html("Losses: " + losses);
 $(".points-so-far").html(userTotal);
- 
+
 // Have click functions assigned to each button to add the present value to the total score. 
 $("#ruby").on("click", function() {
     userTotal = userTotal + rubyGuess; 
     $(".points-so-far").html(userTotal);
+    console.log(userTotal, computerGuess);
+    if (userTotal > computerGuess) {
+        losses++; 
+        userTotal = 0 
+        computerGuess = Math.floor(Math.random() * 120) +19;
+        rubyGuess = Math.floor(Math.random() * 12) +1;
+        sapphireGuess = Math.floor(Math.random() * 12) +1;
+        crystalGuess = Math.floor(Math.random() * 12) +1;
+        emeraldGuess = Math.floor(Math.random() * 12) +1;
+        $(".random-number").html(computerGuess); 
+        $("#wins").html("Wins: " + wins);
+        $("#losses").html("Losses: " + losses);
+        $(".points-so-far").html(userTotal);
+        console.log("You lost this round");
+        console.log(rubyGuess);
+        console.log(sapphireGuess);
+        console.log(crystalGuess);
+        console.log(emeraldGuess); 
+        console.log(userTotal); 
+        console.log("Wins: " + wins);
+        console.log("Losses: " + losses);
+    }
+    if (userTotal === computerGuess) {
+        wins++; 
+        userTotal = 0 
+        computerGuess = Math.floor(Math.random() * 120) +19;
+        rubyGuess = Math.floor(Math.random() * 12) +1;
+        sapphireGuess = Math.floor(Math.random() * 12) +1;
+        crystalGuess = Math.floor(Math.random() * 12) +1;
+        emeraldGuess = Math.floor(Math.random() * 12) +1;
+        $(".random-number").html(computerGuess); 
+        $("#wins").html("Wins: " + wins);
+        $("#losses").html("Losses: " + losses);
+        $(".points-so-far").html(userTotal);
+        console.log("You win this time");
+        console.log(rubyGuess);
+        console.log(sapphireGuess);
+        console.log(crystalGuess);
+        console.log(emeraldGuess); 
+        console.log(userTotal); 
+        console.log("Wins: " + wins);
+        console.log("Losses: " + losses);
+    }
+    
 });
 
 $("#sapphire").on("click", function() {
     userTotal = userTotal + sapphireGuess;
     $(".points-so-far").html(userTotal);
+    console.log(userTotal, computerGuess);
+    if (userTotal > computerGuess) {
+        losses++; 
+        userTotal = 0 
+        computerGuess = Math.floor(Math.random() * 120) +19;
+        rubyGuess = Math.floor(Math.random() * 12) +1;
+        sapphireGuess = Math.floor(Math.random() * 12) +1;
+        crystalGuess = Math.floor(Math.random() * 12) +1;
+        emeraldGuess = Math.floor(Math.random() * 12) +1;
+        $(".random-number").html(computerGuess); 
+        $("#wins").html("Wins: " + wins);
+        $("#losses").html("Losses: " + losses);
+        $(".points-so-far").html(userTotal);
+        console.log("You lost this round");
+        console.log(rubyGuess);
+        console.log(sapphireGuess);
+        console.log(crystalGuess);
+        console.log(emeraldGuess); 
+        console.log(userTotal); 
+        console.log("Wins: " + wins);
+        console.log("Losses: " + losses);
+    }
+    if (userTotal === computerGuess) {
+        wins++; 
+        userTotal = 0 
+        computerGuess = Math.floor(Math.random() * 120) +19;
+        rubyGuess = Math.floor(Math.random() * 12) +1;
+        sapphireGuess = Math.floor(Math.random() * 12) +1;
+        crystalGuess = Math.floor(Math.random() * 12) +1;
+        emeraldGuess = Math.floor(Math.random() * 12) +1;
+        $(".random-number").html(computerGuess); 
+        $("#wins").html("Wins: " + wins);
+        $("#losses").html("Losses: " + losses);
+        console.log("You win this round");
+        $(".points-so-far").html(userTotal);
+        console.log(rubyGuess);
+        console.log(sapphireGuess);
+        console.log(crystalGuess);
+        console.log(emeraldGuess); 
+        console.log(userTotal); 
+        console.log("Wins: " + wins);
+        console.log("Losses: " + losses);
+    }
 });
 
 $("#crystal").on("click", function() {
     userTotal = userTotal + crystalGuess;
     $(".points-so-far").html(userTotal);
+    console.log(userTotal, computerGuess);
+    if (userTotal > computerGuess) {
+        losses++; 
+        userTotal = 0 
+        computerGuess = Math.floor(Math.random() * 120) +19;
+        rubyGuess = Math.floor(Math.random() * 12) +1;
+        sapphireGuess = Math.floor(Math.random() * 12) +1;
+        crystalGuess = Math.floor(Math.random() * 12) +1;
+        emeraldGuess = Math.floor(Math.random() * 12) +1;
+        $(".random-number").html(computerGuess); 
+        $("#wins").html("Wins: " + wins);
+        $("#losses").html("Losses: " + losses);
+        $(".points-so-far").html(userTotal);
+        console.log("You lost this round");
+        console.log(rubyGuess);
+        console.log(sapphireGuess);
+        console.log(crystalGuess);
+        console.log(emeraldGuess); 
+        console.log(userTotal); 
+        console.log("Wins: " + wins);
+        console.log("Losses: " + losses);
+    }
+    if (userTotal === computerGuess) {
+        wins++; 
+        userTotal = 0 
+        computerGuess = Math.floor(Math.random() * 120) +19;
+        rubyGuess = Math.floor(Math.random() * 12) +1;
+        sapphireGuess = Math.floor(Math.random() * 12) +1;
+        crystalGuess = Math.floor(Math.random() * 12) +1;
+        emeraldGuess = Math.floor(Math.random() * 12) +1;
+        $(".random-number").html(computerGuess); 
+        $("#wins").html("Wins: " + wins);
+        $("#losses").html("Losses: " + losses);
+        $(".points-so-far").html(userTotal);
+        console.log("You win this round");
+        console.log(rubyGuess);
+        console.log(sapphireGuess);
+        console.log(crystalGuess);
+        console.log(emeraldGuess); 
+        console.log(userTotal); 
+        console.log("Wins: " + wins);
+        console.log("Losses: " + losses);
+    }
 });
 
 $("#emerald").on("click", function() {
     userTotal = userTotal + emeraldGuess;
     $(".points-so-far").html(userTotal);
+    console.log(userTotal, computerGuess);
+    if (userTotal > computerGuess) {
+        losses++; 
+        userTotal = 0 
+        computerGuess = Math.floor(Math.random() * 120) +19;
+        rubyGuess = Math.floor(Math.random() * 12) +1;
+        sapphireGuess = Math.floor(Math.random() * 12) +1;
+        crystalGuess = Math.floor(Math.random() * 12) +1;
+        emeraldGuess = Math.floor(Math.random() * 12) +1;
+        $(".random-number").html(computerGuess); 
+        $("#wins").html("Wins: " + wins);
+        $("#losses").html("Losses: " + losses);
+        $(".points-so-far").html(userTotal);
+        console.log("You lost this round");
+        console.log(rubyGuess);
+        console.log(sapphireGuess);
+        console.log(crystalGuess);
+        console.log(emeraldGuess); 
+        console.log(userTotal); 
+        console.log("Wins: " + wins);
+        console.log("Losses: " + losses);
+    }
+    if (userTotal === computerGuess) {
+        wins++; 
+        userTotal = 0 
+        computerGuess = Math.floor(Math.random() * 120) +19;
+        rubyGuess = Math.floor(Math.random() * 12) +1;
+        sapphireGuess = Math.floor(Math.random() * 12) +1;
+        crystalGuess = Math.floor(Math.random() * 12) +1;
+        emeraldGuess = Math.floor(Math.random() * 12) +1;
+        $(".random-number").html(computerGuess); 
+        $("#wins").html("Wins: " + wins);
+        $("#losses").html("Losses: " + losses);
+        $(".points-so-far").html(userTotal);
+        console.log("You win this round");
+        console.log(rubyGuess);
+        console.log(sapphireGuess);
+        console.log(crystalGuess);
+        console.log(emeraldGuess); 
+        console.log(userTotal); 
+        console.log("Wins: " + wins);
+        console.log("Losses: " + losses);
+    }
 });
 
-// Set conditions for wins and losses. If the total score is over the computerGuess then the round is over and it counts as a loss (losses--;). 
-if (userTotal > computerGuess) {
-    losses++; 
-    userTotal = 0 
-    computerGuess = Math.floor(Math.random() * 120) +19;
-    rubyGuess = Math.floor(Math.random() * 12) +1;
-    sapphireGuess = Math.floor(Math.random() * 12) +1;
-    crystalGuess = Math.floor(Math.random() * 12) +1;
-    emeraldGuess = Math.floor(Math.random() * 12) +1;
-    $("#random-number").html(computerGuess); 
-}
-
-if (userTotal === computerGuess) {
-    wins++; 
-    computerGuess = Math.floor(Math.random() * 120) +19;
-    rubyGuess = Math.floor(Math.random() * 12) +1;
-    sapphireGuess = Math.floor(Math.random() * 12) +1;
-    crystalGuess = Math.floor(Math.random() * 12) +1;
-    emeraldGuess = Math.floor(Math.random() * 12) +1;
-    $("#random-number").html(computerGuess); 
-}
-// If the player score is exactly matched to the computerGuess then the player wins (wins++;).
-
 // Once the player reaches 5 wins or 5 losses then the game is over and everything resets. 
+if (wins > 5) {
+    alert("You have won the game!")
+    wins = 0; 
+    losses = 0; 
+}
+
+if (losses > 5) {
+    alert("You have lost the game")
+    wins = 0;
+    losses = 0; 
+}
+
 
 });
